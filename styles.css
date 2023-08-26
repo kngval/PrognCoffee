@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    background: rgb(8, 8, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.title {
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 5rem;
+    
+}
+.container {
+    display: flex;
+}
+
+.container img {
+    width: 900px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+.btn-container {
+    margin-left: 50px;
+    margin-right: 20px;
+
+    
+}
+
+.tab-btn {
+    cursor: pointer;
+    border: none;
+    background: rgb(35, 35, 86);
+    width: 200px;
+    padding: 15px;
+    margin-left: -5px;
+}
+
+
+
+.content{
+    width: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    display: none;
+
+
+}
+
+.content h3{
+    margin: 30px 0;
+}
+
+.content p{
+    margin-bottom: 10px;
+}
+
+.content li {
+    margin: 10px 0;
+}
+
+
+
+.content.active{
+    display: block;
+   
+}
+
+.tab-btn.active {
+    background: transparent;
+}
+
+
+@media (max-width:1850px) {
+    .container img{
+        width: 900px;
+    }
+    
+    .tab-btn {
+        width: 150px;
+    }
+}
+
+@media (max-width:1620px) {
+    .container img {
+        width: 700px;
+        height: 500px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .content li {
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 460px) {
+
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        width: 450px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        width: 430px;
+        border-radius: 0;
+    }
+
+    .main-container{
+        width: 450px;
+    }
+
+    .btn-container{
+        width: 450px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tab-btn {
+        width: 139px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .content {
+        width: 420px;
+        padding: 5px;
+        
+    }
+
+   
+}
